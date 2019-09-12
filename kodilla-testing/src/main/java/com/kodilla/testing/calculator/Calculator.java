@@ -4,23 +4,13 @@ public class Calculator {
     int a;
     int b;
 
-    public Calculator(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-    public int getA(){
-        return a;
-    }
-    public int getB(){
-        return b;
-    }
 
-    public int dodawanie(){
+    public int dodawanie(int a , int b){
         int wynikDodawania = a + b;
         return wynikDodawania;
 
     }
-    public int odejmowanie(){
+    public int odejmowanie(int a , int b){
         int wynikOdejmowania = a - b;
         return wynikOdejmowania;
     }
