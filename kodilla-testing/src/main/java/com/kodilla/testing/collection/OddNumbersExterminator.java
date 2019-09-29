@@ -13,27 +13,25 @@ public class OddNumbersExterminator {
         listaParzysta = new ArrayList<Integer>();
         listaNieparzysta = new ArrayList<Integer>();
     }
-    public List<Integer> getParzysteList(){
+
+    public ArrayList<Integer> getParzysteList(){
         return listaParzysta;
     }
-    public List<Integer> getNieparzysteList(){
+    public ArrayList<Integer> getNieparzysteList(){
         return listaNieparzysta;
     }
 
 
-    public void exterminate(ArrayList<Integer> numbers) {
+    public ArrayList<Integer> exterminate(ArrayList<Integer> numbers) {
 
         for (Integer f : numbers) {
             if (f % 2 == 0) {
                 listaParzysta.add(f);
-            } else {
-                listaNieparzysta.add(f);
             }
         }
+        return new ArrayList<>(getParzysteList());
 
 
-        System.out.println(listaParzysta);
-        System.out.println(listaNieparzysta);
     }
 
 

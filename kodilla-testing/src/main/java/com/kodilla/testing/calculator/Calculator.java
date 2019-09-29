@@ -10,6 +10,7 @@ public class Calculator {
         return wynikDodawania;
 
     }
+
     public int odejmowanie(int a , int b){
         int wynikOdejmowania = a - b;
         return wynikOdejmowania;
