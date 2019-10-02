@@ -65,9 +65,4 @@ public final class ForumUser {
                 .map(friend -> friend.getLocation())
                 .collect(Collectors.toSet());
     }
-
-
-
-
-
 }

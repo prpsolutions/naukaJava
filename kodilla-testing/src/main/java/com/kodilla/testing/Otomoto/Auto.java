@@ -12,7 +12,6 @@ public class Auto {
     private boolean ifCabrio = Auto.randomIfCabrio();
     private static int id = 1;
 
-
     public Auto(){
         this.indexNr = id;
         id++;
@@ -25,9 +24,6 @@ public class Auto {
         }
         return new ArrayList<Auto>(theList);
     }
-
-
-
 
     public static String randomMarka() {
         Random r=new Random();
@@ -69,7 +65,6 @@ public class Auto {
                 tablicaIfCabrio[randomNumber];
     }
 
-
     public String getMarka() {
         return marka;
     }
@@ -92,7 +87,6 @@ public class Auto {
             return  marka + ", rocznik = " + year + " - Nadwozie typu cabrio";
         } else return  marka + ", rocznik = " + year;
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -117,8 +111,4 @@ public class Auto {
                 .filter(s -> s.getMarka().substring(0, 1).equals(filterMarka))
                 .forEach(System.out::println);
     }
-
-
-
-
 }

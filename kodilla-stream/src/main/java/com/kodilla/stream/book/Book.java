@@ -6,8 +6,6 @@ public final class Book {
     private final int yearOfPublication;
     private final String signature;
 
-
-
     public Book(final String author, final String title,
                 final int yearOfPublication , final String signature) {
         this.author = author;
@@ -35,5 +33,4 @@ public final class Book {
                 ", title = " + title +
                 ", yearOfPublication = " + yearOfPublication + " - Jej sygnatura to - " + signature;
     }
-
 }

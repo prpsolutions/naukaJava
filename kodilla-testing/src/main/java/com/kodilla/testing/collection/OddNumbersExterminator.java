@@ -1,13 +1,10 @@
 package com.kodilla.testing.collection;
 
-        import java.util.ArrayList;
-        import java.util.List;
-        import java.util.Random;
+import java.util.ArrayList;
 
 public class OddNumbersExterminator {
     private ArrayList<Integer> listaParzysta;
     private ArrayList<Integer> listaNieparzysta;
-
 
     public OddNumbersExterminator(){
         listaParzysta = new ArrayList<Integer>();
@@ -21,7 +18,6 @@ public class OddNumbersExterminator {
         return listaNieparzysta;
     }
 
-
     public ArrayList<Integer> exterminate(ArrayList<Integer> numbers) {
 
         for (Integer f : numbers) {
@@ -30,9 +26,5 @@ public class OddNumbersExterminator {
             }
         }
         return new ArrayList<>(getParzysteList());
-
-
     }
-
-
 }

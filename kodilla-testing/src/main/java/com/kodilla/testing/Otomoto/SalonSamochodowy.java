@@ -41,6 +41,5 @@ public class SalonSamochodowy {
             System.out.println(z);
         }
         return new ArrayList<>();
-
     }
 }

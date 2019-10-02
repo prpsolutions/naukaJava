@@ -1,11 +1,9 @@
 package com.kodilla.stream.book;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public final class BookDirectory {
     private final List<Book> theBookList = new ArrayList<>();
-
 
     public BookDirectory() {
         theBookList.add(new Book("Dylan Murphy", "Wolf" , 2015, "0000"));
