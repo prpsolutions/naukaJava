@@ -7,17 +7,21 @@ public class ForumUser {
     private static Random r = new Random();
     private final int indexNr;
     private final String name = ForumUser.getRandomName();
-    private final char sex;
+    private final Sex sex;
     private final LocalDate dateOfBirth = ForumUser.getRandomLocalDate();
     private final int postsQuantity = r.nextInt(10);
     private static int nr;
 
+    public enum Sex {
+            K, M;
+    }
+
     public ForumUser() {
         this.indexNr = nr;
         if(this.name == "Piotr" || this.name == "Michal" || this.name == "Maciej") {
-            sex = 'M';
+            sex = Sex.M;
         } else {
-            sex = 'K';
+            sex = Sex.K;
         }
         nr++;
     }
@@ -64,7 +68,7 @@ public class ForumUser {
         return name;
     }
 
-    public char getSex() {
+    public Sex getSex() {
         return sex;
     }
 
