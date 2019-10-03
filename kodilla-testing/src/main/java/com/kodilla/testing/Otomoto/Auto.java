@@ -103,6 +103,7 @@ public class Auto {
     public int hashCode() {
         return Objects.hash(indexNr, getMarka(), getYear(), isIfCabrio());
     }
+
     public void streamowanie(int filterYear , String filterMarka){
         Auto.getListBryk().stream()
                 .filter(s -> s.getMarka().length() > 1)

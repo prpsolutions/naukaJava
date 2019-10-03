@@ -1,10 +1,6 @@
 package com.kodilla.testing;
-import com.kodilla.testing.Otomoto.Auto;
-import com.kodilla.testing.Otomoto.SalonSamochodowy;
-import com.kodilla.testing.Otomoto.Zamowienia;
-import com.kodilla.testing.calculator.Calculator;
+
 import com.kodilla.testing.collection.OddNumbersExterminator;
-import com.kodilla.testing.user.SimpleUser;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -13,11 +9,19 @@ public class TestingMain {
 
     public static void main(String[] args) {
 
-    Auto obiekt = new Auto();
-    obiekt.streamowanie(2017 ,"A");
+        Random r = new Random();
 
+        ArrayList<Integer> numbers = new ArrayList<>();;
 
+        for (int i = 0; i < 100; i++) {
+            numbers.add(r.nextInt(100));
+        }
 
+        OddNumbersExterminator obiekt = new OddNumbersExterminator();
+        obiekt.exterminate(numbers);
+
+        System.out.println(obiekt.getNieparzysteList().size());
+        System.out.println(obiekt.getParzysteList());
 
 
 
@@ -34,20 +38,6 @@ public class TestingMain {
 
 
 /*
-
- Random r = new Random();
-
- ArrayList<Integer> numbers = new ArrayList<>();;
-
-        for (int i = 0; i < 100; i++) {
-            numbers.add(r.nextInt(100));
-        }
-
-        OddNumbersExterminator obiekt = new OddNumbersExterminator();
-        obiekt.exterminate(numbers);
-
-        System.out.println(obiekt.getNieparzysteList().size());
-        System.out.println(obiekt.getParzysteList());
 
 
 

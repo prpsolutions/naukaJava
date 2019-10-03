@@ -11,7 +11,7 @@ public class OddNumbersExterminator {
         listaNieparzysta = new ArrayList<Integer>();
     }
 
-    public ArrayList<Integer> getParzysteList(){
+    public ArrayList<Integer> getParzysteList() {
         return listaParzysta;
     }
     public ArrayList<Integer> getNieparzysteList(){

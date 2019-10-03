@@ -1,7 +1,7 @@
 package com.kodilla.stream.beautifier;
 
 public class PoemBeautifier {
-    public void beautify(){
+    public void beautify(PoemDecorator poemDecorator, String upiekszacz){
 
 
     }

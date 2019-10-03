@@ -29,9 +29,9 @@ public class CollectionTestSuite {
         OddNumbersExterminator obiekt = new OddNumbersExterminator();
         //When
         ArrayList<Integer> result = obiekt.getParzysteList();
+        result.clear();
         System.out.println("Testing method testOddNumbersExterminatorNormalList ");
         //Then
-        Assert.assertEquals(obiekt.getParzysteList(), result);
+        Assert.assertEquals(obiekt.getParzysteList().isEmpty(), true);
     }
-
 }
