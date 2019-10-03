@@ -24,14 +24,27 @@ public class CollectionTestSuite {
     }
 
     @Test
-    public void testOddNumbersExterminatorNormalList (){
+    public void testOddNumbersExterminatorEmptyList  (){
         //Given
         OddNumbersExterminator obiekt = new OddNumbersExterminator();
+        obiekt.getParzysteList().clear();
         //When
         ArrayList<Integer> result = obiekt.getParzysteList();
-        result.clear();
         System.out.println("Testing method testOddNumbersExterminatorNormalList ");
         //Then
         Assert.assertEquals(obiekt.getParzysteList().isEmpty(), true);
     }
+    public void testOddNumbersExterminatorNormalList  (){
+        //Given
+        OddNumbersExterminator obiekt = new OddNumbersExterminator();
+        obiekt.getParzysteList();
+        //When
+        ArrayList<Integer> result = obiekt.getParzysteList();
+        System.out.println("Testing method testOddNumbersExterminatorNormalList ");
+        //Then
+        Assert.assertEquals(obiekt.getParzysteList().isEmpty(), true);
+    }
+
+
+
 }
