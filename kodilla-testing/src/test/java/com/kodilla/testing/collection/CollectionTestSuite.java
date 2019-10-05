@@ -4,6 +4,7 @@ package com.kodilla.testing.collection;
 import org.junit.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CollectionTestSuite {
     @Before
@@ -27,24 +28,29 @@ public class CollectionTestSuite {
     public void testOddNumbersExterminatorEmptyList  (){
         //Given
         OddNumbersExterminator obiekt = new OddNumbersExterminator();
-        obiekt.getParzysteList().clear();
+        List<Integer> emptyList = new ArrayList<>();
         //When
-        ArrayList<Integer> result = obiekt.getParzysteList();
+        obiekt.exterminate(emptyList);
         System.out.println("Testing method testOddNumbersExterminatorNormalList ");
         //Then
         Assert.assertEquals(obiekt.getParzysteList().isEmpty(), true);
     }
+
+    @Test
     public void testOddNumbersExterminatorNormalList  (){
         //Given
         OddNumbersExterminator obiekt = new OddNumbersExterminator();
-        obiekt.getParzysteList();
+        List<Integer>  filledList = new ArrayList<>();
+        Integer x = 1;
+        for (int i = 0; i < 100; i++) {
+            filledList.add(x);
+            x++;
+        }
+
         //When
-        ArrayList<Integer> result = obiekt.getParzysteList();
+        obiekt.exterminate(filledList);
         System.out.println("Testing method testOddNumbersExterminatorNormalList ");
         //Then
-        Assert.assertEquals(obiekt.getParzysteList().isEmpty(), true);
+        Assert.assertEquals(obiekt.getParzysteList(),?????? );
     }
-
-
-
 }

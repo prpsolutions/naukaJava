@@ -3,28 +3,12 @@ package com.kodilla.testing;
 import com.kodilla.testing.collection.OddNumbersExterminator;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class TestingMain {
 
     public static void main(String[] args) {
-
-        Random r = new Random();
-
-        ArrayList<Integer> numbers = new ArrayList<>();;
-
-        for (int i = 0; i < 100; i++) {
-            numbers.add(r.nextInt(100));
-        }
-
-        OddNumbersExterminator obiekt = new OddNumbersExterminator();
-        obiekt.exterminate(numbers);
-
-        System.out.println(obiekt.getNieparzysteList().size());
-        System.out.println(obiekt.getParzysteList());
-
-
-
 
 
 
