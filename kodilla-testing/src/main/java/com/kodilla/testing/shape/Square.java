@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class Square implements Shape{
     private String shapeName = "Square";
-    private int dlugoscBoku;
+    private int sideLength;
 
 
     public Square(int dlugoscBoku) {
-        this.dlugoscBoku = dlugoscBoku;
+        this.sideLength = dlugoscBoku;
     }
 
     @Override
@@ -18,7 +18,7 @@ public class Square implements Shape{
 
     @Override
     public double getField(){
-        return dlugoscBoku * dlugoscBoku;
+        return sideLength * sideLength;
     }
 
     @Override
@@ -26,17 +26,17 @@ public class Square implements Shape{
         if (this == o) return true;
         if (!(o instanceof Square)) return false;
         Square square = (Square) o;
-        return dlugoscBoku == square.dlugoscBoku &&
+        return sideLength == square.sideLength &&
                 getShapeName().equals(square.getShapeName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getShapeName(), dlugoscBoku);
+        return Objects.hash(getShapeName(), sideLength);
     }
 
     @Override
     public String toString() {
-        return "Nazwa figury = " + shapeName + " dlugosc jego boku to " + dlugoscBoku + " cm";
+        return "Nazwa figury = " + shapeName + " dlugosc jego boku to " + sideLength + " cm";
     }
 }
