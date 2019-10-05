@@ -1,10 +1,13 @@
 package com.kodilla.stream.immutable;
 
+import java.util.List;
+
 public final class ForumUser {
     private final String name;
     private final String surname;
     private final String login;
     private final int age;
+    private final List<ForumUser> friends;
 
     public ForumUser(final String name,final String surname,final String login,final int age) {
         this.name = name;
@@ -27,5 +30,8 @@ public final class ForumUser {
 
     public int getAge() {
         return age;
+    }
+    public void addFriend(ForumUser newFriend){
+        friends.add(newFriend);
     }
 }
