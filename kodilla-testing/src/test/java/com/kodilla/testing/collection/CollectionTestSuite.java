@@ -46,11 +46,10 @@ public class CollectionTestSuite {
             filledList.add(x);
             x++;
         }
-
         //When
-        obiekt.exterminate(filledList);
+        ArrayList<Integer> result = obiekt.exterminate(filledList);
         System.out.println("Testing method testOddNumbersExterminatorNormalList ");
         //Then
-        Assert.assertEquals(obiekt.getParzysteList(),?????? );
+        Assert.assertEquals(obiekt.getParzysteList(), result);
     }
 }
