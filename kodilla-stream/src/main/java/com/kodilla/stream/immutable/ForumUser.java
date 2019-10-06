@@ -9,7 +9,7 @@ public final class ForumUser {
     private final int age;
     private final List<ForumUser> friends;
 
-    public ForumUser(final String name,final String surname,final String login,final int age) {
+    public ForumUser(final String name, final String surname, final String login, final int age) {
         this.name = name;
         this.surname = surname;
         this.login = login;
@@ -28,10 +28,15 @@ public final class ForumUser {
         return login;
     }
 
+    public List<ForumUser> getFriendsList() {
+        return friends;
+    }
+
     public int getAge() {
         return age;
     }
-    public void addFriend(ForumUser newFriend){
+
+    public void addFriend(ForumUser newFriend) {
         friends.add(newFriend);
     }
 }
