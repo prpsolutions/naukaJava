@@ -24,6 +24,7 @@ public class OddNumbersExterminator {
         for (Integer f : numbers) {
             if (f % 2 == 0) {
                 listaParzysta.add(f);
+            } else {listaNieparzysta.add(f);
             }
         }
         return new ArrayList<>(listaParzysta);

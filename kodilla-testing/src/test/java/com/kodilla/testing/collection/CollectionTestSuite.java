@@ -2,8 +2,9 @@
 package com.kodilla.testing.collection;
 
 import org.junit.*;
-
+import static org.hamcrest.CoreMatchers.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CollectionTestSuite {
@@ -41,15 +42,16 @@ public class CollectionTestSuite {
         //Given
         OddNumbersExterminator obiekt = new OddNumbersExterminator();
         List<Integer>  filledList = new ArrayList<>();
-        Integer x = 1;
-        for (int i = 0; i < 100; i++) {
-            filledList.add(x);
-            x++;
-        }
+        filledList = Arrays.asList(1,2,3,4,5,6);
+
         //When
-        ArrayList<Integer> result = obiekt.exterminate(filledList);
+        obiekt.exterminate(filledList);
+        List<Integer> parzyste = obiekt.getParzysteList();
+        List<Integer> nieparzyste = obiekt.getNieparzysteList();
         System.out.println("Testing method testOddNumbersExterminatorNormalList ");
         //Then
-        Assert.assertEquals(obiekt.getParzysteList(), result);
+        Assert.assertEquals(parzyste.size(), 3);
+        Assert.assertEquals(nieparzyste.size(), 3);
+        Assert.assertThat(parzyste).containsOnly(2,4,6);
     }
 }

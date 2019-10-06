@@ -6,7 +6,7 @@ public class OtoMotoMain {
     public static void main(String[] args) {
 
         Auto obiekt = new Auto();
-        obiekt.streamowanie(2017 ,"A");
+        obiekt.filtrowanie(2017 ,"A");
 
     }
 }

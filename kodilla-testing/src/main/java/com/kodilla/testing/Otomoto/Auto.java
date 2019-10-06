@@ -104,7 +104,7 @@ public class Auto {
         return Objects.hash(indexNr, getMarka(), getYear(), isIfCabrio());
     }
 
-    public void streamowanie(int filterYear , String filterMarka){
+    public void filtrowanie(int filterYear , String filterMarka){
         Auto.getListBryk().stream()
                 .filter(s -> s.getMarka().length() > 1)
                 .filter(s -> s.isIfCabrio())
