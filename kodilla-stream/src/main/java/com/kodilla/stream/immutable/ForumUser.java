@@ -1,5 +1,6 @@
 package com.kodilla.stream.immutable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public final class ForumUser {
@@ -7,7 +8,7 @@ public final class ForumUser {
     private final String surname;
     private final String login;
     private final int age;
-    private final List<ForumUser> friends;
+    private final List<ForumUser> friends = new ArrayList<>();
 
     public ForumUser(final String name, final String surname, final String login, final int age) {
         this.name = name;
@@ -29,7 +30,7 @@ public final class ForumUser {
     }
 
     public List<ForumUser> getFriendsList() {
-        return friends;
+        return new ArrayList<>(friends);
     }
 
     public int getAge() {
@@ -38,5 +39,16 @@ public final class ForumUser {
 
     public void addFriend(ForumUser newFriend) {
         friends.add(newFriend);
+    }
+
+    @Override
+    public String toString() {
+        return "ForumUser{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", login='" + login + '\'' +
+                ", age=" + age +
+                ", friends=" + friends +
+                '}';
     }
 }
