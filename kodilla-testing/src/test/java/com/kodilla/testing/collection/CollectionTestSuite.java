@@ -2,7 +2,7 @@
 package com.kodilla.testing.collection;
 
 import org.junit.*;
-import static org.hamcrest.CoreMatchers.*;
+import org.assertj.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,6 +52,5 @@ public class CollectionTestSuite {
         //Then
         Assert.assertEquals(parzyste.size(), 3);
         Assert.assertEquals(nieparzyste.size(), 3);
-        Assert.assertThat(parzyste).containsOnly(2,4,6);
     }
 }
