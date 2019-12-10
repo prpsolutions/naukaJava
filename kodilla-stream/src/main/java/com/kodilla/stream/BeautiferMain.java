@@ -1,7 +1,14 @@
 package com.kodilla.stream;
 
-public class BeautiferMain {
+import com.kodilla.stream.beautifier.PoemBeautifier;
+import com.kodilla.stream.beautifier.PoemDecorator;
 
+public class BeautiferMain {
+    public static void main(String[] args) {
+
+
+
+    }
 
 
 }

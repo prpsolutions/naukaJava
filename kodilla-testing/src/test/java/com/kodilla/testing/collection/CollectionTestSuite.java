@@ -2,7 +2,6 @@
 package com.kodilla.testing.collection;
 
 import org.junit.*;
-import org.assertj.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
