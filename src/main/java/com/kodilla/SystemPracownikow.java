@@ -7,7 +7,7 @@ public class SystemPracownikow {
         Pracownik obiekt2 = new Pracownik("Michal", 23 );
         Pracownik obiekt3 = new Pracownik("Krzysztof", 33 );
         Pracownik obiekt4 = new Pracownik("Pawel", 42 );
-        Pracownik obiekt5 = new Pracownik("Michal", 21 );
+        Pracownik obiekt5 = new Pracownik("Waldemar", 21 );
 
 
 
