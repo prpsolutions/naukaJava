@@ -1,4 +1,4 @@
-package com.kodilla;
+package com.kodilla.hashMap;
 
 public class GeneratorWyplat {
     private Pracownik pracownik;
